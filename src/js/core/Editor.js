@@ -20,6 +20,7 @@ import 'codemirror/mode/clike/clike.js';
 
 // Keymap
 import 'codemirror/keymap/sublime';
+import 'codemirror/keymap/vim';
 
 const UNFOCUS_CLASS = 'ge_editor-unfocus';
 
@@ -45,7 +46,7 @@ export function initEditor (main) {
         lineNumbers: main.options.lineNumbers,
         matchBrackets: true,
         mode: 'x-shader/x-fragment',
-        keyMap: 'sublime',
+        keyMap: 'vim',
         autoCloseBrackets: true,
         extraKeys: { 'Ctrl-Space': 'autocomplete' },
         showCursorWhenSelecting: true,
